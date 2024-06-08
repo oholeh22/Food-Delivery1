@@ -45,7 +45,9 @@
               </li>
             </ul>
           </nav>
-          <button class="nav-btn" type="button">Order Now</button>
+          <button class="nav-btn" data-modal-open type="button">
+            Order Now
+          </button>
         </div>
       </div>
     </header>
@@ -101,5 +103,39 @@
       </section>
     </main>
     <footer></footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close-btn" type="button" data-modal-close>
+          X
+        </button>
+        <p class="modal-title">Order Form</p>
+        <form action="">
+          <ul class="modal-form-list">
+            <li>
+              <label for="" class="modal-label">Name</label
+              ><input type="text" class="modal-input" placeholder="Your name" />
+            </li>
+            <li>
+              <label for="" class="modal-label">Phone number</label
+              ><input
+                type="text"
+                class="modal-input"
+                placeholder="+38(0_ _) _ _ _   _ _   _ _"
+              />
+            </li>
+            <li>
+              <label for="" class="modal-label">E-mail</label
+              ><input
+                type="text"
+                class="modal-input"
+                placeholder="example@gmail.com"
+              />
+            </li>
+          </ul>
+          <button class="modal-send-btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
